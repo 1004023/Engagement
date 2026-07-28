@@ -399,7 +399,7 @@
 
     <div id="petals-container"></div>
 
-    <div class="music-player" id="musicToggle">🎵 تشغيل</div>
+    <div class="music-player" id="musicToggle">🎵 إيقاف</div>
     <audio id="bgMusic" preload="auto">
         <source src="song.mp3" type="audio/mpeg">
         <source src="song.mp3.mpeg" type="audio/mpeg">
@@ -480,7 +480,7 @@
 
             // ---- العد التنازلي ----
             function updateCountdown() {
-                const target = new Date('2026-08-05T21:00:00').getTime();
+                const target = new Date('2026-08-01T21:00:00').getTime();
                 const diff = target - Date.now();
                 if (diff <= 0) {
                     document.getElementById('days').textContent = '00';
